@@ -1,0 +1,26 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3701
+
+Puprpose~
+Ensure my favorite keymap is always available by overwriting plugin-defined
+keymap with my buffer local keymap.
+
+I know this plugin is not perfect solution, but I think this still useful.
+
+Practical usecase~
+For example, I use following keymap to move between windows.  
+>
+    nnoremap <silent> <C-h> :wincmd h<CR>
+    nnoremap <silent> <C-l> :wincmd l<CR>
+    nnoremap <silent> <C-k> :wincmd k<CR>
+    nnoremap <silent> <C-j> :wincmd j<CR>
+<
+
+With this keymap, I can move window to window with <C-hlkj>.
+But sometime, plugin I installed overwrite one of these keymap.  
+To ensure `<C-hlkj>` combination is always available, set buffer local keymap 
+after plugin have set up their keymap.  
+This could be done with `autocmd Filetype`, but setup this autocmd each time I
+install new plugin is nonsense.  
+
+To do that, refer |fthook-examples| in help.
+
