@@ -1,6 +1,6 @@
 *fthook.txt* simplify filetype specific setting.
 						      
-Version: 0.2
+Version: 0.3
 Author : t9md <taqumd@gmail.com>
 GitHub : https://github.com/t9md/vim-fthook
 ==============================================================================
@@ -116,7 +116,10 @@ BUG							*fthook-bug*
 
 ==============================================================================
 CHANGELOG						*fthook-changelog*
+2011-08-22: v0.3
+	- no functionality change. fix zip archiveing mistake.
 2011-08-21: v0.2
 	- initial release to vim.org
+
 ==============================================================================
 vim:tw=78:ts=8:ft=help:norl:
